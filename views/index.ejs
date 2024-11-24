@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <h1><%= title %></h1>
+    <ul>
+        <% messages.map((message, index)=> { %>
+            <li>
+                <p><%= message.text %></p>
+                <a href=<%= index %>/message>
+                    <button>Details</button>
+                </a>
+            </li>
+            <% }) %>
+    </ul>
+    <a href="/new">
+        <button>New message</button>
+    </a>
+
+</body>
+
+</html>
